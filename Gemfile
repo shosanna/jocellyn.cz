@@ -10,3 +10,4 @@ gem "builder", "~> 3.0"
 gem "rake"
 
 gem "nokogiri"
+gem "github-markdown", '~> 0.6.5'

@@ -1,8 +1,9 @@
 ---
 title: When dreams come true
 date: 2012-08-27 00:00 UTC
-tags:
+tags: self-improvement
 ---
+
 
 I would like to tell you about dreams and about conditions required for their realization. As far as I have known, there are few conditions which you must fulfill in order to follow your dreams. I will explain these with my own experiences.
 

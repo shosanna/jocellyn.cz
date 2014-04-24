@@ -1,7 +1,7 @@
 ---
 title: Little thinking about love
 date: 2012-09-28 00:00 UTC
-tags:
+tags: self-improvement, love
 ---
 
 I was thinking about love. Well, I was thinking about love since I was 12 and had my first crush (it was a passionate romance - my friend set us together and it lasted two weeks).

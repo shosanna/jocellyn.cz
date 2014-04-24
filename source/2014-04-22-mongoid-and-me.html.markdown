@@ -1,7 +1,7 @@
 ---
 title: Mongoid and me
 date: 2014-04-22 20:57 UTC
-tags:
+tags: programming, rails, ruby, mongodb,
 ---
 
 I got a new amazing job as a junior Ruby on Rails programmer. Everything

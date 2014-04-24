@@ -5,7 +5,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'/>
   <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="stylesheets/main.css" rel="stylesheet">
+  <link href="/stylesheets/main.css" rel="stylesheet">
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 </head>
@@ -14,36 +14,33 @@
 
 <div id="main" role="main" class="container">
   <div class="row">
-    <div class="col-md-3">
-      <%= image_tag "images/2.jpeg", class: "logo" %>
+    <h1 class="title"> Jocellyn's Blog</h1>
+
+    <div class="col-md-3 image">
+    <a href="/">
+          <%= image_tag "images/2.jpeg", class: "logo" %>
+    </a>
     </div>
     <div class="col-md-6 articles">
       <%= yield %>
     </div>
-  </div>
-</div>
+    <div class="col-md-3 menu">
+      <!--<h2>Recent Articles</h2>-->
+      <!--<ol>-->
+      <!--
+      <% blog.articles[0...10].each do |article| %>-->
+          <!--<li><%= link_to article.title, article %> <span class="badge"><%= article.date.strftime('%b %e') %></span></li>-->
+          <!--
+      <% end %>-->
+      <!--</ol>-->
 
-<footer class="footer-menu">
-  <div class="row">
-    <div class="col-md-3 col-md-offset-2">
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-            <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-    </div>
-
-    <div class="col-md-3">
       <h2>Tags</h2>
       <ol>
         <% blog.tags.each do |tag, articles| %>
             <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
         <% end %>
       </ol>
-    </div>
 
-    <div class="col-md-3">
       <h2>By Year</h2>
       <ol>
         <% blog.articles.group_by { |a| a.date.year }.each do |year, articles| %>
@@ -53,7 +50,7 @@
     </div>
 
   </div>
+</div>
 
-</footer>
 </body>
 </html>

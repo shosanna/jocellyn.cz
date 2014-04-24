@@ -1,7 +1,7 @@
 ---
 title: Buy her face
 date: 2013-01-14 00:00 UTC
-tags:
+tags: self-improvement
 ---
 
 I would like to write about one project of my friend. Her name is Veselina, she is from Bulgaria and we met in a

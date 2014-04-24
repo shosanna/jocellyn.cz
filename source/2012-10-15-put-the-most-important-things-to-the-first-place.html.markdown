@@ -1,7 +1,7 @@
 ---
 title: Put the most important things to the first place
 date: 2012-10-15 00:00 UTC
-tags:
+tags: self-improvement
 ---
 
 In this article I will explain part of the theory from the book “The seven habits of highly effective people” by S.R. Covey.

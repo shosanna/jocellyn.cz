@@ -1,8 +1,9 @@
 ---
 title: Trust as a tool to engage people
 date: 2012-09-24 00:00 UTC
-tags:
+tags: self-improvement
 ---
+
 I would like to speak about delegation and about my experience with working with people. For me is trust the biggest motivation. I am doing my best when I feel that my work has actual influence, that I am responsible for the outcome and that someone trusts me in this issue.
 
 I am a founder of one small czech NGO, which works mainly around an informational website for young people about active and self-development spending of time. We do not have any money to pay a stuff, we do it as our hobby. Couple month ago we really felt that we need help. We were just 3 students taking care of it and it was just to much work for us. We started to look for volunteers. In that time I realized how hard is to engage people in some thought which is not originally theirs. We had lot of answers but the problem was that the people lost interest in a few days.

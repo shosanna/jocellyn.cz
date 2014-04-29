@@ -10,7 +10,7 @@ I have no idea if only I was struggling with such a simple concept or if is the 
 programmers like me, but I decided to write about it anyway.
 
 At first impression I thought that params are something magical.
-I thought that i can get something from params only if I submit a form, like this:
+I thought that I can get something from params only if I submit a form, like this:
 
 ```
 <%= simple_form_for @game do |f| %>
@@ -42,16 +42,16 @@ The name was send in the form and labeled as a name when I used:
 But what about something a little bit more mysterious, like id? A game is very common to find based on its ID.
 But where is the id coming from?
 
-When we want to see the view page for an existing record, we go to the URL which looks like this: /games/1
-The id is incorporated into the URL, hence we can do (in our games controller, show action):
+When we want to see the view page for an existing record, we go to the URL which looks like this: /games/1.
+**The id is incorporated into the URL**, hence we can do (in our games controller, show action):
 
     @game = Game.find(params[:id])
 
-The params could be sent by a form OR could be fetched from the URL. That is the most fundamental rule!
+**The params could be sent by a form OR could be fetched from the URL. That is the most fundamental rule!**
 
 What amaze me the most is that you can add anything to the URL and play with params all day long!
 For a decades I believed that params is something special which you can not control.
-You have this params from forms and this params from Url which represents an id. Not true!
+You have this params from forms and this params from URL which represents an id and that is it. Not true!
 Params is a hash, so you can create your own and send it to the controller, so that you can use it in various cool actions.
 Check this out:
 
@@ -102,11 +102,11 @@ It is just a hash which will be added to the url.
 The controller and the action which your link leads to will be able to retrieve this hash and do stuff with it.
 Like use it in a filters.
 
-Note that you can link to the same controller action which you are right now.
+Note that you can link to the same **controller action which you are right now**.
 This means that you will not leave the page, only your params will be added.
 I used this for example when I needed to prepare a more complicated selection process and than send it with all the params at once.
 
-To wrap it all up, params are your way to communicate with controller.
+To wrap it all up, **params are your way to communicate with controller**.
 You can send information from the views by submitting a form
 (another cool trick is to include a hidden tag to your form so that some information
 will be always sent along with the user’s filled inputs). You can send information by adding them to the URL.

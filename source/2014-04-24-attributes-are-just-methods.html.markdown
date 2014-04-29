@@ -5,13 +5,13 @@ tags: programming, ruby, rails, mongodb
 layout: post
 ---
 
-I am not sure if many beginners know that, because I did not, but attributes in rails are just a methods.
+I am not sure how many beginners know that, because I did not, but attributes in rails are just a methods.
 It is not anything fancy and special, really. Let's explain it with an example.
 
 Imagine situation that you are receiving
 params, which are not exactly matching with your model's attributes. (Well, this is of course
 nonsense when you are sending the data on your own from a form, but consider sending from
-another application trough lets say json api).
+another application via json api).
 
 Your params could look like this:
 
@@ -19,7 +19,7 @@ Your params could look like this:
 {user: {name: "Olaf", age: "7", interest: "playing"}}
 ```
 
-And your models could look like this:
+And your model could look like this:
 
 ```
 class User
@@ -30,7 +30,7 @@ class User
 
     # Typing fields like this is a MongoDB speciality
     # when using Activerecord you would not have it here,
-    # you would see your attributes in db/scheme
+    # you would see your attributes in db/scheme.
 end
 ```
 Notice, that we are getting one interest from params, but our model stores an array of many interests.
@@ -39,10 +39,10 @@ When you would like to for example update your current user with those params fr
 you could be tempted to create the custom logic for saving the different parameter in your controller.
 
 Maybe you would call the `update_attributes` for the rest of the params, and then you would
-call `user.interests << params[:interest]` but this is wrong. All your updating should
-be handled by this one method, `update_attributes`. So, let's present a solution.
+call `user.interests << params[:interest]`.  This is wrong. All your updating should
+be handled by one method - `update_attributes`. So, let's present a solution.
 
-You could take advantage from my initial phrase ("attributes are just methods") and create a
+We will take advantage from my initial phrase ("attributes are just methods") and create a
 virtual, helper attribute called the same way as your param. You need to define its getter and
 setter, aka how you will retrieve its value and how you will change it.
 
@@ -63,7 +63,7 @@ class User
 end
 ```
 
-Now, when we call `interest = something` we are actually filling our proper attributes, the right
+Now, when we call `interest = something` we are actually filling our proper attribute, the right
 one (`interests`). We are encapsulating it by a helper attribute. Why?
 Because when we do in our controller:
 

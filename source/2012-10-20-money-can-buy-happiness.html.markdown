@@ -2,6 +2,7 @@
 title: Money can buy happiness
 date: 2012-10-20 00:00 UTC
 tags: self-improvement
+layout: post
 ---
 
 I just gave 10$ to one classroom in the USA to help them buy a books for the children.

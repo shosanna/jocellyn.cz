@@ -2,6 +2,7 @@
 title: Javascript ain't Ruby
 date: 2014-03-05 00:00 UTC
 tags: programming, javascript, ruby
+layout: post
 ---
 
 Javascript was my first “programming” language I met. it was a while ago, in times when I was doing my personal blog, playing around with CSS and learning HTML. I wanted to add some extra cool behavior to my blog, so I started javascript class at Codecademy. But I was not using it as a programming language, I had no idea what does it even mean. I saw it just as a dynamic tool to make animations and for that purpose it was great. I was happy I could do stuff sortable lists in jQuery, fading elements away, etc. It was not even hard to type a one line code that could do that.

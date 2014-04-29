@@ -2,6 +2,7 @@
 title: Why do I miss social studies
 date: 2014-02-02 00:00 UTC
 tags: sociology, self-improvement, programming
+layout: post
 ---
 
 I am an IT student now. I started to be one over a 6 monts ago and I completely fell in love with it. I started to be a tech girl, I have been watching various podcasts about programming, reading english books, going to meetups or learning through online tutorials. I have been learning Ruby, Ruby on Rails, JavaScript and I even looked at Haskell, Prolog or Scala. Recently I even got my first IT part time job!

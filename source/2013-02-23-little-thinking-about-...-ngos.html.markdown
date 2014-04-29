@@ -2,6 +2,7 @@
 title: Little thinking about … NGOs
 date: 2013-02-23 00:00 UTC
 tags: sociology
+layout: post
 ---
 
 I had an interesting debate about NGOs recently. We were discussing if it is ethical to have high salary while working for a non-profit. I was representing the minority who stand stand in . In the opposite side of the table were couple of (really pro-social) girls, who were fiercely advocating the notion that “if you want to help people, you don’t care about money”.

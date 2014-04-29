@@ -2,6 +2,7 @@
 title: Are students outsiders?
 date: 2013-03-02 00:00 UTC
 tags: sociology, education
+layout: post
 ---
 
 According to David Rueda, labor is divided into insiders and outsiders. Insiders have protected and secure job with social benefits, and outsiders are unemployed or hold jobs with low salaries and low protection. Students are also considered as outsiders since they do not have a job and also do not have a certainty that they will get one after finishing school. Palier and Thelen also speak about dualization of labor (in France and Germany), but they see it as a result of sequence of developments within industrial relations, labor market and welfare state reforms. This dualization into insiders and outsiders is linked with social insurance and social protection division as well with high security at the core of labor and instability at the margin..

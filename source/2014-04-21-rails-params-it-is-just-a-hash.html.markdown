@@ -2,6 +2,7 @@
 title: Rails params - it is just a hash
 date: 2014-04-21 12:59 UTC
 tags: programming, ruby, rails
+layout: post
 ---
 
 I am learning Ruby on Rails for over a year and today I finally understood params. It has been a long way.

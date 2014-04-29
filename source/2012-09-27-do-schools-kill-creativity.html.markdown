@@ -2,6 +2,7 @@
 title: Do schools kill creativity?
 date: 2012-09-27 00:00 UTC
 tags: self-improvement, education
+layout: post
 ---
 
 Do schools kill creativity by Sir Ken Robinson is my favourite lecture about education (and also the only one I have seen so far).

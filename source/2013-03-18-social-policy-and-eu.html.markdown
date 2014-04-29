@@ -2,6 +2,7 @@
 title: Social policy and EU
 date: 2013-03-18 00:00 UTC
 tags: sociology, EU
+layout: post
 ---
 
 According to theory of Alesina, Angeloni and Schuknecht from 2005, EU should prefer centralization in some politics and decentralization in others. This is explained by the economical trade-offs between gains and costs. In some cases (like international trade), it is more economically profitable to involve the EU, and in some other cases (like culture), it is better to retain the national level, because the costs of heterogenic preferences are too huge.. This paper brings the reason why social policy is one of these areas, which are better governed at the national level. It is mainly because of the different models of social policy, which are based on common values and which are adapted to state’s capacity to deal with social issues. This is also linked with economic issues.

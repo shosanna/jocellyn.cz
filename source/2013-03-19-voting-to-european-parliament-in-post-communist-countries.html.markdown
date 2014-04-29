@@ -2,6 +2,7 @@
 title: Voting to European Parliament in post-communist countries
 date: 2013-03-19 00:00 UTC
 tags: sociology, EU
+layout: post
 ---
 
 This paper addresses the problem of low turnout and high defection in European Parliament elections in post-communist countries, and compares these countries with the older member states in the European Union. It is based on three articles dealing with mechanisms explaining why people vote differently in national election and European Parliament (EP) election.

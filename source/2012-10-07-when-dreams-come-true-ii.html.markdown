@@ -2,6 +2,7 @@
 title: When dreams come true II
 date: 2012-10-07 00:00 UTC
 tags: self-improvement
+layout: post
 ---
 
 

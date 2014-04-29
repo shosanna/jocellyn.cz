@@ -2,6 +2,7 @@
 title: From one beginner to another
 date: 2014-04-15 00:00 UTC
 tags: programming, ruby
+layout: post
 ---
 
 I have recently started to dive into the beautiful world of programming. It started kind of innocent, I discovered [codecademy](http://www.codecademy.com/) followed by other great online courses and tutorials and I learnt HTML, CSS, jQuery and finally Ruby on Rails. It has been almost a year now and I still feel like a absolute newbie, despite the fact that I am successfully studying at IT University (with scholarship) and I have a perfect job as a Ruby on Rails developer. I have never write a single line of code before, I graduated from social studies and I always thought about myself as a “technical impractial individual”. But if I can have such a great success with Ruby, I bet everyone else with a passion can do it too!

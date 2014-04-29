@@ -2,6 +2,7 @@
 title: Trust as a tool to engage people
 date: 2012-09-24 00:00 UTC
 tags: self-improvement
+layout: post
 ---
 
 I would like to speak about delegation and about my experience with working with people. For me is trust the biggest motivation. I am doing my best when I feel that my work has actual influence, that I am responsible for the outcome and that someone trusts me in this issue.

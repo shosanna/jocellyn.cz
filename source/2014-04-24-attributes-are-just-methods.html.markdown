@@ -2,6 +2,7 @@
 title: Attributes are just methods
 date: 2014-04-24 19:27 UTC
 tags: programming, ruby, rails, mongodb
+layout: post
 ---
 
 I am not sure if many beginners know that, because I did not, but attributes in rails are just a methods.

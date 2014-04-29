@@ -1,17 +1,17 @@
 body {
-    font-family: avenir, sans-serif;
+    font-family: "proxima-nova", 'sans-serif';
     font-size: 18px;
 }
 
 .container {
-    text-align: justify;
+    text-align: left;
     padding-bottom: 300px;
 }
 
 .articles {
     background: white;
     height: 580px;
-
+    margin-left: 30px;
 }
 
 .logo {
@@ -22,8 +22,15 @@ body {
 
 }
 
+h1.title {
+    font-size: 48px;
+    font-family: "federico-web";
+    margin-bottom: 20px;
+}
+
 h2 {
-    font-size: 20px;
+    font-size: 26px;
+    font-weight: 300;
 }
 
 h2 a {
@@ -43,4 +50,29 @@ a:hover {
     text-align: center;
     color: #df5689;
 
+}
+
+.menu h2 {
+    font-size: 16px;
+}
+
+.menu {
+    font-size: 14px;
+}
+
+.menu a {
+   color: #9e9a95;
+}
+
+.menu a:hover {
+    color: #42403d;
+}
+
+.space-maker {
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.single-post h2 {
+    color: #df5689;
 }

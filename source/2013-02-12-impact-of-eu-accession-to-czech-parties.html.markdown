@@ -2,6 +2,7 @@
 title: Impact of EU accession to Czech parties
 date: 2013-02-12 00:00 UTC
 tags: sociology, EU
+layout: post
 ---
 
 Some articles claim that European political parties had changed during the process of EU accession and that this enlargement played significant role in parties’ competition. This paper argues, that political parties in the Czech Republic did not changed their position based on EU influence and that they did support EU accession from the beginning of the negotiation. I use as an example two major parties, Civic Democratic party from the right-wing and Social democratic party from the left-wing of Czech political scale.

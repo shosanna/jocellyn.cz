@@ -31,8 +31,8 @@ single day? Will you take the quality of your code as your personal mission?
 Everyone says that he wants to be a good developer, everyone agrees that he wants to develop his skills and learn new stuff.
 The difference is - will you pursue these goals even after a long day at work? If you come home and think:
 "I have been coding all day long, now I deserve a break" or "I am to exhausted to watch that new video from RubyConf,
-I will watch a comedy instead", or "I will not start any new and excited side project, I do not have time for it", then you
-are on the bad road.
+I will watch a comedy instead", or "I will not start any new and excited side project, I do not have time for it"
+then perhaps, you are on the road of settling, not improving.
 
 My secret is that I want to be a good developer. I do not want to have just a job, I want to have a life-long
 mission of improving myself and moving forward. I built a solid base of understanding how developer thinks
@@ -81,4 +81,4 @@ make something personal. Find something you care about and make it your project.
 To be honest, I had the biggest problems with this last part. I read, read, read and read and I still
 could not put myself into doing something. Even now I feel like I would rather watch a video about something,
 than to actually try to do it. It is scary (and also I am sometimes very lazy), but when you find your passion in it,
-it will change your perspective. 
+it will change your perspective.

@@ -3,6 +3,10 @@ body {
     font-size: 18px;
 }
 
+.invisible {
+    display: none;
+}
+
 .container {
     text-align: left;
     padding-bottom: 300px;

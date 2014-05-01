@@ -52,6 +52,10 @@ a:hover {
 
 }
 
+.date {
+    font-size: 16px;
+}
+
 .menu h2 {
     font-size: 16px;
 }
@@ -76,3 +80,26 @@ a:hover {
 .single-post h2 {
     color: #df5689;
 }
+
+.tags h2 {
+    color: #df5689;
+}
+
+.tags a {
+    color: #9e9a95;
+    font-size: 14px;
+}
+
+.tags .date {
+    font-size: 12px;
+
+}
+
+.tags a:hover {
+    color: #42403d;
+}
+
+.tags ul {
+    list-style: none;
+}
+

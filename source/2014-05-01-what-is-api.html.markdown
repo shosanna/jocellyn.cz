@@ -147,7 +147,7 @@ end
 
 As you can see, we will not render any html template in our API 
 controller, just json. It will not invoke the default view as in
-the first case, because when we typed `render` we explicitely said to 
+the first case, because when we typed `render` we explicitly said to 
 render whatever format is then specified and prevented the default.
 Next, we pulled out all our `geo_points` to show them on the map, then we
 rendered them via json. This means that every object will be serialized

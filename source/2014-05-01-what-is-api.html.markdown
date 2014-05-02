@@ -5,7 +5,7 @@ tags: ruby, rails, programming
 layout: post
 ---
 
-When someone tries to explain me "what is an API", he always sais
+When someone tries to explain me "what is an API", he always says
 something like: "well, it is a programming interface, when you want to
 gain some information from a app, you can do it via API". I really did
 not understand that.  I finally got it when I started to work on a rails

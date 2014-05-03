@@ -53,7 +53,7 @@ access as putting these two together may end up unexpectedly. If you
 merge them together and they contain the same keys,
 you will end up by having both, not just the later ones. 
 
-```
+```ruby
 regular = Hash.new
 regular[:one] = 1
 regular[:two] = 2
@@ -66,6 +66,7 @@ indifferent[:one] = "one"
 regular.merge(indifferent) # => {:one=>1, :two=>2, "one"=>"one",
 "two"=>"two"}
 ```
+
 Hovewer, if you do it the opposite way (merging regular into
 indifferent) it will do what is expected and we will have the later
 values: `{"one" => 1, "two" => 2}` but it will become also an
@@ -74,7 +75,7 @@ indifferent hash, so the keys wil be stringified.
 P.S. if you want to play with these example in your console, do not
 forget to include the hash with indifferent acces like this:
 
-```
+```ruby
 require "active_support/hash_with_indifferent_access"
 ```
 

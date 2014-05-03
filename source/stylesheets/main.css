@@ -107,6 +107,11 @@ a:hover {
     list-style: none;
 }
 
+.mailchimp h3 {
+  font-size: 22px;
+  color: #df5689;
+}
+
 
 .hll { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */

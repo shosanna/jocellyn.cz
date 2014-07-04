@@ -1,0 +1,112 @@
+---
+title: learning
+date: 2014-07-04 18:32 UTC
+tags: Rails
+---
+
+This article is here to clarify some of the "other" skills that you should 
+know besides Ruby on Rails, if you want to build a web app. It will also give you a direction to where to learn these.
+
+When I was learning programing for the very first time, 
+I though that I will read some books and then I will know how to do it
+and I will just... do it. Well, I was wrong. Learning the basics is just
+a start. Especially today with new technologies coming up every now and
+then, you need to stay actual. Also, with just a raw knowledge of the
+language and the framework, you would be on your own for everything.
+There are plenty of ways how to make your programming tasks easier, just
+because someone already figured that problem out. You need to be able to
+gain from these past experience so that you can focus on your aim. 
+Programming is not a solo job and you shouldn't try do do everything on your own either!
+Here is the list:
+
+
+1) Ruby
+Of course, it is Ruby itself which you can not avoid. It is the most
+important part of all of this, because everything stands on that
+language. You may think that learning Rails will get you fundamentals in
+Ruby, but sooner or later you will come across some real programming
+issues where you will have to prove that you understand the language. 
+
+
+2) Object oriented programming
+Knowing the language does not guarantee that you will use it corectly.
+There is something called object oriented programming, I am sure you
+have heard of it but do you know what it means? Do you know the common
+design patterns? Do you know why is it important, not to for example
+make a classes with more responsibilites? Most of these stuff you will
+catch as time will go, but you definitely want to take a look at it. I
+only rarely recommend a book, because I know how frustrating it
+can be to put a banch of books in front of someone who just want to
+start coding. This time I will make an exception and I will recommend a
+book, but I am not saying to read it. I am saying to go through it, to look
+at it and just get a taste of OOP. Read only what interests you. The book is
+[Practical object oriented design in Ruby](http://www.poodr.com/). 
+This stuff is what matters, if you understand the design
+of how things should be dealt. When you will be on an interview in a
+future, they will not ask you
+about names of methods or something that you can forgot (and what you
+can easily google). They will ask you how would you make your classes
+and relationships between them in th best possible way, they would want
+to know your design decisions. They will be
+asking about object oriented programming. 
+
+3) Database
+Every application needs a place to store its data. You have probably met
+only the basic one which comes right along with your new Rails
+appliaction. This default is SQlite database. Rails is so cool that you
+do not need to know the language used for data manipulation (called SQL)
+I will not tell you to learn that language either, but I encourage you
+to discover at least little bit about your database. For example, how
+you enter it's console mode? How you switch to another database? When you
+start working as a developer it is very likely you will have to deal
+with these question. 
+It is also very likely that you will deal
+with another databases. Today is very cool to use the so called no-sql
+databases like MongoDb, CouchDb or Reddis. Of course you can not know them all, so it is
+natural to learn how it works during working on a project. But it would
+be a shame not to even know that database can be switched or that for
+some kinds of databases you do not need to run migrations to alter your
+data structure. Nice and brief tutorial is for eample on [Tutsplus]
+(http://code.tutsplus.com/tutorials/relational-databases-for-dummies--net-30244)
+or on
+[geekgirl's](http://geekgirls.com/2010/02/databasics-i-records-queries-keys-oh-my/).
+What I think is the best, because it will give you everything and much
+more in a very pleasent form (video lectures with an super nice guy) is
+[Lynda.com](http://www.lynda.com/Programming-tutorials/Foundations-Programming-Databases/112585-2.html)
+course. I always watched Lynda courses before going to sleep or while
+doing something else and I learnt much more than if I would just read
+some tutorial. This guy is expert on explanation.  
+
+4) Git 
+Collaboration is essential. You will never work on a project purely on
+your own. And when you will work in team, I guarantee you they will use
+some kind of version control. I decided to describe Git, because is one
+of the most popular and in my opinion it is the absolute best. There are
+lots of sources for learning it, for example the [Try Git]
+(https://try.github.io) by CodeSchool which will get your everything you
+need in a neat course, the [LearnGitBranching]
+(http://pcottle.github.io/learnGitBranching/) or the paid, but very deep
+[Lynda.com]
+(http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)
+course. There are several nice graphical tutorials which will walk you
+throught the basics, I recommend these: [Scott Chacon book and blog]
+(http://git-scm.com/course/svn.html), [Git immersion]
+(http://gitimmersion.com/lab_01.html), [Git Tower]
+(http://www.git-tower.com/learn/ebook/command-line/introduction) book or
+the [Atlassion tutorials]
+(https://www.atlassian.com/git/tutorial/git-basics).
+
+
+5) GitHub
+This is optional, but it will become very handy if you get used to
+Github soon. Github is a place where people, teams and companies can
+store they code using Git and where they can collaborate online - review
+each other's work, comment, report issues, etc.  To get an account is
+free, hovewer there are some paid plans too. A great tip, if you a
+student, is to apply for student discount for a GitHub micro plan for
+free (otherways it costs $5 a mont). You can do it on [Github
+Education](https://education.github.com/).
+A good tutorial is this on [readwrite]
+(http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oDT4IxuUTUUWn4)
+or this on [lifehacker]
+(http://lifehacker.com/5983680/how-the-heck-do-i-use-github).

@@ -4,10 +4,12 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.3.2"
 gem "middleman-blog", "~> 3.5.2"
+gem "middleman-syntax"
+gem "middleman-livereload"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 gem "rake"
 
 gem "nokogiri"
-gem "github-markdown", '~> 0.6.5'
+gem "redcarpet"

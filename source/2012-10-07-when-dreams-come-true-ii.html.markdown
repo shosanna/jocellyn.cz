@@ -1,8 +1,11 @@
 ---
 title: When dreams come true II
 date: 2012-10-07 00:00 UTC
-tags:
+tags: self-improvement
+layout: post
 ---
+
+
 In the first part of this article I was speaking about allowing yourself to have a dream.
 It is extremely important to change your way of thinking from negative to positive perspective.
 If you want to achieve something you must be able to imagine it, believe that you deserve it and that it can be real.

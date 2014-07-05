@@ -1,7 +1,8 @@
 ---
 title: Little reflection on productivity
 date: 2012-08-30 00:00 UTC
-tags:
+tags: self-improvement, education
+layout: post
 ---
 
 Being a student at the University of Gothenburg makes me think about productivity and the ability to manage time well and learn effectively. Especially important are these skills when you find yourself in a situation like me, when studying international master course you do not understand and that is based on a reading of plenty professional articles that simply can not keep up finish. You just have to learn how to be organised.

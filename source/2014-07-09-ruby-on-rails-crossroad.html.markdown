@@ -15,14 +15,14 @@ based on their format:
 
 **Combination of video and challenges**
 
-- [Code school](www.codeschool.com) - Both
+- [Code school](http://codeschool.com) - Both
 - [Tree house](http://teamtreehouse.com/) - Rails
 - [Learn street](https://www.learnstreet.com)  - Ruby
 - [Pragmatic Studio](http://pragmaticstudio.com/rails) - Ruby
 
 **Excercises only**
 
-- [Codecademy](codecademy.com) - Ruby
+- [Codecademy](http://codecademy.com) - Ruby
 - [Ruby Monk](https://rubymonk.com/) - Ruby
 - [Talent Buddy](http://www.talentbuddy.co/) - Ruby
 - [Ruby Koans](http://rubykoans.com/) - Ruby
@@ -46,8 +46,8 @@ doing it, which may not fit everyone.
 
 **Video only**
 
-- [Lynda](www.lynda.com) - Both
-- [Udemy](www.udemy.com) - Both
+- [Lynda](http://www.lynda.com) - Both
+- [Udemy](http://www.udemy.com) - Both
 - [PluralSight](http://pluralsight.com/) - Both
 - [Buckys Room](https://buckysroom.org/videos.php?cat=50) - Ruby
 - [Tuts Plus](http://courses.tutsplus.com/) - Both

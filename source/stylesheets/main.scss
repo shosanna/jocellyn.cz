@@ -246,3 +246,20 @@ a:hover {
     }
   }
 
+.social-buttons {
+  position: fixed;
+  top: 350px;
+  left: 1200px;
+  margin: 10px 0 0 10px;
+
+  a {
+    font-size: 24px;
+    color: #F17381;
+  }
+
+  a + a {
+    margin-left: 10px;
+  }
+}
+
+

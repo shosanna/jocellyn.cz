@@ -1,7 +1,7 @@
 ---
 title: Why do I love Haskell more than Ruby?
 date: 2014-07-22 22:33 UTC
-tags: haskell
+tags: haskell, programming
 layout: post
 ---
 

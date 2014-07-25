@@ -1,110 +1,114 @@
 body {
-    font-family: "proxima-nova", 'sans-serif';
-    font-size: 18px;
+  font-family: "proxima-nova", 'sans-serif';
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 .container {
-    text-align: left;
-    padding-bottom: 300px;
+  text-align: left;
+  padding-bottom: 300px;
 }
 
 .articles {
-    background: white;
-    height: 580px;
-    margin-left: 30px;
+  background: white;
+  height: 580px;
+  margin-left: 30px;
 }
 
 .logo {
-    width: 200px;
-    margin: auto;
-    display: block;
-    margin-top: 10px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
 
 }
 
 h1.title {
-    font-size: 48px;
-    font-family: "federico-web";
-    margin-bottom: 20px;
+  font-size: 48px;
+  font-family: "federico-web";
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 26px;
-    font-weight: 300;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 h2 a {
-    color: #df5689;
+  color: #df5689;
 }
 
 h2 a:hover {
-    text-decoration: none;
-    color: #9f3966;
+  text-decoration: none;
+  color: #9f3966;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .title {
-    text-align: center;
-    color: #df5689;
+  text-align: center;
+  color: #df5689;
 
 }
 
 .date {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .menu h2 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .menu {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .menu a {
-   color: #9e9a95;
+  color: #9e9a95;
 }
 
 .menu a:hover {
-    color: #42403d;
+  color: #42403d;
 }
 
 .space-maker {
-    margin-bottom: 35px;
-    margin-top: 35px;
+  margin-bottom: 35px;
+  margin-top: 35px;
 }
 
 .single-post h2 {
-    color: #df5689;
+  color: #df5689;
 }
 
 .tags h2 {
-    color: #df5689;
+  color: #df5689;
 }
 
 .tags a {
-    color: #9e9a95;
-    font-size: 14px;
+  color: #9e9a95;
+  font-size: 14px;
 }
 
 .tags .date {
-    font-size: 12px;
+  font-size: 12px;
 
 }
 
 .tags a:hover {
-    color: #42403d;
+  color: #42403d;
 }
 
 .tags ul {
-    list-style: none;
+  list-style: none;
 }
 
 .mailchimp h3 {
@@ -202,55 +206,64 @@ a:hover {
     }
   }
 
-    p {
-      padding-top: 10px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
-
-  .right {
+  p {
     padding-top: 10px;
-    float: left;
-    width: 200px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 
-    label {
-      font-size: 16px;
-      font-weight: bold;
-    }
+.right {
+  padding-top: 10px;
+  float: left;
+  width: 200px;
 
-    input {
-      padding: 5px 10px;
-      width: 220px;
-    }
+  label {
+    font-size: 16px;
+    font-weight: bold;
   }
 
-  .col.second button {
-    background: #428bca;
-    border: 1px solid #3d6d96;
-    color: #FFF;
-    font-size: 18px;
-    text-shadow: none;
-
-    line-height: 1.42;
-
-    margin-top: 10px;
-    padding: 10px 5px;
+  input {
+    padding: 5px 10px;
     width: 220px;
-
-    transition: all ease-in-out 0.2s;
-
-    &:hover {
-      background: #3d6d96;
-      border: 1px solid transparent;
-    }
   }
+}
+
+.col.second button {
+  background: #428bca;
+  border: 1px solid #3d6d96;
+  color: #FFF;
+  font-size: 18px;
+  text-shadow: none;
+
+  line-height: 1.42;
+
+  margin-top: 10px;
+  padding: 10px 5px;
+  width: 220px;
+
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background: #3d6d96;
+    border: 1px solid transparent;
+  }
+}
+
+.single-post {
+  position: relative;
+  overflow: visible;
+}
+
+.social-buttons-wrap {
+  position: absolute;
+  left: 700px;
+}
 
 .social-buttons {
   position: fixed;
   top: 350px;
-  left: 1200px;
-  margin: 10px 0 0 10px;
+  // left: 1300px;
 
   a {
     font-size: 24px;

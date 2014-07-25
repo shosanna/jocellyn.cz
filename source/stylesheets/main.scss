@@ -174,3 +174,75 @@ a:hover {
 .vg { color: #008080 } /* Name.Variable.Global */
 .vi { color: #008080 } /* Name.Variable.Instance */
 .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+
+
+.form-box {
+  width: 580px;
+  background: #fff0f6;
+  border: 1px solid #fff2f7;
+  box-shadow: 0 0 3px #999, inset 0 2px 0 #eee;
+  overflow: hidden;
+  padding: 30px;
+  margin: 0 auto 40px auto;
+
+  .left {
+    float: left;
+    width: 280px;
+    margin-right: 25px;
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+
+      line-height: 1.1;
+
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+    p {
+      padding-top: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .right {
+    padding-top: 10px;
+    float: left;
+    width: 200px;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 5px 10px;
+      width: 220px;
+    }
+  }
+
+  .col.second button {
+    background: #428bca;
+    border: 1px solid #3d6d96;
+    color: #FFF;
+    font-size: 18px;
+    text-shadow: none;
+
+    line-height: 1.42;
+
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 220px;
+
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+      background: #3d6d96;
+      border: 1px solid transparent;
+    }
+  }
+

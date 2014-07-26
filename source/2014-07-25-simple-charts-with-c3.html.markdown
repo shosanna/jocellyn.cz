@@ -8,16 +8,14 @@ tags: javascript, programming
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
 
 
-
-
 This article aims to explain how to use a cool library called <a href="http://c3js.org/">C3</a> for building simple charts. C3 is a javascript library
-which builds on top fo <a href="http://d3js.org/">famous D3</a>. You can find plenty of good sources (online or printed) on how to learn D3 and make
+which builds on top of <a href="http://d3js.org/">famous D3</a>. You can find plenty of good sources (online or printed) on how to learn D3 and make
 complex visualizations with it, but for many people, these would be too advanced. Often you just need to add a <strong>simple graph to
-a webpage </strong> to show some statistics - a scatterplot or a bar chart.
+a webpage </strong> to show some statistics - a scatter plot or a bar chart.
 
-C3 allows you to do just that without knowing all the complexity of D3 because it wraps all you need into a function calls.
+C3 allows you to do just that without knowing all the complexity of D3 because it wraps all you need into a simple API.
 You do not need to handle the SVG elements manually, nor the hover effects, etc.
-The final results of C3 chart could look like this:
+The final result could look like this:
 
 <div id="chart"></div>
 <script>
@@ -30,7 +28,7 @@ var chart = c3.generate({
         type : 'donut'
     },
     donut: {
-        title: "Dogs love:",
+        title: "Dog love",
     }
 });
 </script>
@@ -88,7 +86,7 @@ var chart = c3.generate({
 ```
 
 It is very simple. The first line says that we are generating a chart and assigning it to a variable for later use.
-This chart consists of ({...}). The inner part of the braces tells us more details about it. First and most important is the `data` part.
+This chart consists of what is inside these ({...}). The inner part of the braces tells us more details about it. First and most important is the `data` part.
 Here we are hardcoded an array of arrays, it means our chart will have two values. The first element in the inner array is the label, the second the value.
 
 Then we are specifying the type of a chart, if I changed `donut` for a `bar`, I would get this:
@@ -110,18 +108,18 @@ var chart = c3.generate({
 });
 </script>
 
-This was super easy! Of course yor data can be much more complex, putting more values into the inner arrays for example means comparing the same indexed values to each other, like this:
+This was super easy! Of course your data can be much more complex, putting more values into the inner arrays for example means comparing the values on the same indexes to each other, like this:
 
 ```javascript
 data: {
-        columns: [
-            ['Lulu', 50,4,3,2],
-            ['Olaf', 50,6,8,1],
-        ]
-      }
+    columns: [
+        ['Lulu', 50,4,3,2],
+        ['Olaf', 50,6,8,1]
+    ]
+  }
 ```
 
-Means looking at first value from Lulu's array (50) and second value from Olaf's array (50) and putting them together into one column, then doing the same with other values and shiftting the columns
+Means looking at first value from Lulu's array (50) and first value from Olaf's array (50) and putting them together into one column, then doing the same with other values and shifting the columns
 along the X axis. This is the result:
 
 <div id="chart3"></div>
@@ -142,12 +140,62 @@ var chart = c3.generate({
 </script>
 
 I prepared a JSbin for you, so that you can play around and try these simple charts.
-<a href="http://jsbin.com/vuhoy/1/edit?html,js,output"><span class="btn btn-primary">Go check it out</span></a>.
+<a href="http://jsbin.com/vuhoy/1/edit?html,js,output" target="blank"><span class="btn btn-primary">Go check it out</span></a>.
 
 <br>
 <h2>Customization</h2>
 From the official site you can grap examples to many different styles of graphs. There is line chart, bar chart, pie chart, area chart, step chart, scatter plot, spline chart,... I do not even know
-what they all mean. But it can be confusing for a beginner to see how he can customize these charts based on his needs, so here are few examples:
+what they all mean. But it can be confusing for a beginner to see how he can customize these charts based on his needs.
+
+In general, the pattern is always the same - you look up some feature you would like to add or change in the example page <a href="http://c3js.org/examples.html">here </a>,and then you put just this line into your
+code. The only tricky part is where to put it, because sometimes it should go into the data object, as for example setting ` data labels`:
+
+```javascript
+var chart = c3.generate({
+    data: {
+        columns: [
+            ['data1', 30, -200, -100, 400, 150, 250],
+            ['data2', -50, 150, -150, 150, -50, -150],
+            ['data3', -100, 100, -40, 100, -150, -50]
+        ],
+        type: 'bar',
+        labels: true
+    }
+});
+```
+
+And sometimes it needs to be added as separate object, next to data, like this example with `axes labels`:
+
+```javascript
+var chart = c3.generate({
+    data: {
+        columns: [
+            ['sample', 30, 200, 100, 400, 150, 250],
+            ['sample2', 130, 300, 200, 500, 250, 350]
+        ],
+
+    },
+    axis: {
+        x: {
+            label: 'X Label'
+        },
+        y: {
+            label: 'Y Label'
+        }
+    }
+});
+```
+
+You can customize all sorts of properties like this, for example:
+
+-  `order: 'desc'` // could be 'asc', 'desc' or null, which means the order based on data definition
+-  `legend: { show: false }` // hide the legend
+-  `types: { data1: 'step', data2: 'area-step }` // if you want to combine multiple types of charts for each data
+-  `size: { height: 240, width: 480 }` // size of the chart
+-  `colors: { data1: 'hotpink', data2: 'pink' }`
+
+Lets check an example!
+
 
 <strong>Custom colors for our chart</strong><br>
 I like pink!
@@ -185,13 +233,14 @@ var chart = c3.generate({
             data2: 'area-spline'
         },
          colors: {
-                   data1: 'hotpink',
-                   data2: 'pink'},
+           data1: 'hotpink',
+           data2: 'pink'
+         }
     }
 });
 ```
 
-Did you also notice, how we stated `bindto` to `#chart4`? If we wold have left the default binding, which is to `#chart`, the initial chart from the beggining of the article would have been rewritten
+Did you also notice, how we stated `bindto` to `#chart4`? If we would have left the default binding, which is to `#chart`, the initial chart from the beginning of the article would have been rewritten
 by this one. To have multiple elements with multiple bindings is the way how to keep more than one graph in one page.
 
 
@@ -201,7 +250,7 @@ One requested feature is the ability to load data dynamically, because hardcoded
 If you for example want to show some live data, statistics, etc. You can fetch the actual data through AJAX directly from JavaScript or you can communicate with your HTML data attributes like this:
 
 ```html
- <div id="chart-offer-need" data-source="<%= @statistics.data_offer_need %>"></div>
+<div id="offer-need" data-source="<%= @statistics.data_offer_need %>"></div>
  ```
 
  Do not worry about the syntax, it is Ruby, but if you are programming in some language I am sure you know some way how to send a data from server to your HTML templates like this.
@@ -211,10 +260,10 @@ If you for example want to show some live data, statistics, etc. You can fetch t
 
  var data = JSON.parse(dataSource);
 
-     var chart = c3.generate({
-       bindto: '#chart-offer-need',
-         data: { columns: data}
-      });
+ var chart = c3.generate({
+   bindto: '#chart-offer-need',
+   data: { columns: data }
+  });
 ```
 
 We fetch the data from the attribute using `.attr` and then we parse it.

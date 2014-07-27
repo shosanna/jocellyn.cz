@@ -1,0 +1,95 @@
+---
+title: What should you learn?
+date: 2014-07-04 18:32 UTC
+tags: Rails
+layout: post
+---
+
+This article is here to clarify some of the "other" skills that you should know besides Ruby on Rails, if you want to build a web app. It will also give you a direction to where to learn these.
+
+When I was learning programing for the very first time, I though that I will read a few books and then I will know how to do it and I will just... do it. Well, I was wrong. Learning the basics is just a start. Especially today with new technologies coming up every now and
+then, you need to stay current. Also, with just the raw knowledge of the language and the framework, you would be on your own for everything.
+There are plenty of ways how to make your programming tasks easier, just because someone already figured the problem out. You need to be able to
+gain from these past experience so that you can focus on your goals. Programming is not a solo job and you shouldn't try do do everything on your own either!
+Here is the list:
+
+
+## 1) Ruby
+Of course, it is Ruby itself which you can not avoid. It is the most important part of all of these, because everything depends on the language. You may think that learning Rails will get you the fundamentals in Ruby, but sooner or later you will come across a real programming
+issue where you will have to prove that you understand the language. Learning Rails is easy, but learning Ruby may be the real challenge - especially if it is your first programming language. You should take it seriously and really spend some time with it.
+I could recommend plenty of books, tutorials or courses but I will rather give you and URL for a interesting site full of links - check out [I want to learn Ruby](http://iwanttolearnruby.com/). (Well, for me personally, the best guide is the [to Learn Program](https://pine.fm/LearnToProgram/)
+
+
+## 2) Object oriented programming
+Knowing the language does not guarantee that you will use it corectly. There is something called object oriented programming. I am sure you
+have heard of it, but do you know what it means? Do you know the common design patterns? Do you know why it is important not to make a classes with more than one responsibility? You will catch most of this stuff as you go, but you definitely should take a look at it.
+
+I would only rarely recommend a book, because I know how frustrating it can be to put a bunch of books in front of someone who just wants to
+start coding. This time I will make an exception and I will recommend a book, but I am not saying to read it. I am saying to go through it, to look at it and just get a taste of OOP. Read only what interests you. The book is [Practical object oriented design in Ruby](http://www.poodr.com/). This stuff is what matters, if you understand the design of how things should be dealt. When you will be on an interview in a future, they will not ask you about names of methods or something that you can forgot (and what you can easily google). They will ask you how would you make your classes and relationships between them in the best possible way, they would want
+to know your design decisions. They will be asking about object oriented programming. 
+
+## 3) Database
+Every application needs a place to store its data. You have probably met only the basic one which come right along with your new Rails
+appliaction. This default is the SQlite database. Rails is so cool that you do not need to know the language used for data manipulation (called SQL). I will not tell you to learn that language either, but I encourage you to discover at least little bit about your database. For example, how
+you do open its console? How you switch to another database? When you start working as a developer it is very likely you will have to deal
+with these questions.
+
+It is also very likely that you will deal with other databases. These days it is cool to use so called NoSQL
+databases like MongoDB, CouchDB or Reddis. Of course you don't need to know them all. It is natural to learn how it works during a project. But it would be a shame to not even know that the database can be switched for a different one, or that some databases don't even need migrations. Nice and brief tutorial is for eample on [Tutsplus](http://code.tutsplus.com/tutorials/relational-databases-for-dummies--net-30244)
+or on [geekgirl's](http://geekgirls.com/2010/02/databasics-i-records-queries-keys-oh-my/).
+
+What I think is the best, because it will give you everything and much more in a very pleasent form (video lectures with an super nice guy) is
+the [Lynda.com](http://www.lynda.com/Programming-tutorials/Foundations-Programming-Databases/112585-2.html)
+course. I always watched the Lynda courses before going to sleep or while doing something else and I learned much more than if I would just read
+a tutorial. This guy is expert on explanation.
+
+## 4) Git 
+Collaboration is essential. You will never work on a project purely on your own. And when you will work in team, I guarantee you they will use
+some kind of version control. I decided to describe Git, because is  the most popular and in my opinion it is the absolute best. There are
+lots of sources for learning it, for example the [Try Git](https://try.github.io) by CodeSchool, which will get your everything you
+need in a neat course, the [LearnGitBranching](http://pcottle.github.io/learnGitBranching/) or the paid, but very deep [Lynda.com](http://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html)
+course. There are several nice graphical tutorials which will walk you
+throught the basics. I recommend these: [Scott Chacon book and blog](http://git-scm.com/course/svn.html), [Git immersion](http://gitimmersion.com/lab_01.html), [Git Tower](http://www.git-tower.com/learn/ebook/command-line/introduction) book or
+the [Atlassion tutorials](https://www.atlassian.com/git/tutorial/git-basics).
+
+
+## 5) GitHub
+This is optional, but it will become very handy if you get used to GitHub soon. GitHub is a place where people, teams and companies can
+store they code using Git and where they can collaborate online - review each others work, comment, report issues, etc. You can get an account for free. A great tip, if you a student, is to apply to get a paid plan for free (otherways it costs $5 a mont).
+You can do it on [Github Education](https://education.github.com/).
+A good tutorial is this on [readwrite](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1#awesm=~oDT4IxuUTUUWn4)
+or this on [lifehacker](http://lifehacker.com/5983680/how-the-heck-do-i-use-github).
+
+# Other
+I also think that it may come handy to know some particular solutions for concrete tasks in building a web application. These problems may not concern you now, but I still consider them as a good-to-know, just in case :) Here is the list of additional skills, resources and services:
+
+### 1) Twitter Bootstrap for your design
+It is the frontend framework which offers a CSS styles and JavaScript so that you website will look consistent and modern. It handles the grid system, typography, visual effects, tables, image formatting and much much more. Check out its cool [documentation](http://getbootstrap.com/).
+
+P.S. if you would loke to take a look to another framework with another cool designs, try [Zurb Foundation](http://foundation.zurb.com/), which works pretty much the same as Bootstrap.
+
+### 2) C3 for making a cool charts!
+Have you ever needed to include some kind of a graph on your website? Maybe a bar chart displaying some statistics? Or something else? There are plenty of ways how to do therse with JavaScript and many of these technologies are really advanced (as the amazing [D3](http://d3js.org/), but I recommend here just a simple tool for making a simple charts - with just a few lines and no special knowledge needed at all! It is called C3, [check it out](http://c3js.org/).
+
+### 4) RSpec for your testing
+You may be familiar with test unit, the base testing tools for ruby, but [RSpec](http://www.rspec.com/) is much much better. It allows you to write stuff like `user.count.should eql(2)` or `article.title.should_not be_nil` which is very self-explanatory. You will soon get the feel for it and you will want to write your tests before every piece of code!
+
+### 5) Disqus for your comments
+If you are writing a blog or something similar, you may enjoy the possibility to post comments on your content without any work from your side. [Disqus](https://disqus.com/) provides very neat commenting funcionality for your application while providing comfort for your users. A big plus is also their well documented API.
+
+### 6) Trackets for catching every error
+[Trackets](https://trackets.com/) is a tool for catching JavaScript and Ruby errors in your application. If anything goes wrong, Trackets will send you an email and/or show each error in your dashboard so that you can fix them easily. There are plenty of sites providing the same service, but Trackets is the best. There are grouping of the relevant errors together, source maps, event logs, organizations for multiple users and more.
+
+### 7) CSS Tricks or Smashing Magazine for inspiration
+Even though you are making Rails app and you are focusing on the programming part, I bet you also care about the overal look of your app. You need to master HTML and CSS so that you can make pretty templates and style them according to your taste. These two pages, [CSS tricks](http://css-tricks.com/) and [Smashing Magazine](http://www.smashingmagazine.com/), can help you a lot with CSS issues or they can give you tons of inspiration.
+
+### 8) Slim for saving you some typing
+Sure, HTML rules the world. Almost everyone starts with learning HTML, because it is so easy and so good and you can make an actual webpage with it! But why to bother typing `<div>` and `</div>` over and over again when there are some really modern technologies out there, which replace the old and ugly HTML with a much slimmer syntax? [Slim](http://slim-lang.com/) is one of those (another one is for example Haml). Learning it takes a bit of practice but you will be very grateful afterwards!
+
+### 9) SASS for you CSS variables and nesting
+[SASS](http://sass-lang.com/) allows you to use variables, imports or nesting in your CSS styles. It is actually pretty useful, especially the variables. Imagine you have the same color used all over the web, without SASS you would have to hard coded these colers and change them on every place whenever you would need to. With variable, you just define them on the top of your file and then you may experiment as you like! 
+
+### 10) Heroku alternatives for deploying
+I am almost sure you all know Heroku, because is the single most favourite hosting provider for you Rails app. But did you ever wonder if there are some other way how to deploy your app? Heroku is maybe cool because it will take care of everything for you, but for a bit more independent individuals :), there is for example digital ocean with nice prices for their servers or linode. Both are definitely worth exploring. Also, if you need a hand in how to setup a server and how to deploy in general, Jakub Arnold is currently writing a book about deploying without heroku, you can check its progress [on his amazing blog](http://blog.jakubarnold.cz/).
+
+

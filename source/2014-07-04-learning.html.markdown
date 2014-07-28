@@ -1,5 +1,5 @@
 ---
-title: What should you learn?
+title: What should you learn together with Ruby on Rails??
 date: 2014-07-04 18:32 UTC
 tags: rails, programming
 layout: post

@@ -85,8 +85,12 @@ a:hover {
   margin-top: 35px;
 }
 
-.single-post h2 {
+.single-post h1,h2 {
   color: #df5689;
+}
+
+.single-post h1 {
+  margin-bottom: 20px;
 }
 
 .tags h2 {

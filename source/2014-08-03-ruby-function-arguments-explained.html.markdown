@@ -29,7 +29,7 @@ well as other identifiers like constants, keywords and methods names.
 </tr>
 <tr>
   <td>Class variables </td>
-  <td><code>@my_hero</code> </td>
+  <td><code>@@my_hero</code> </td>
   <td>When you want to store information regarding the whole Class </td>
 </tr>
 <tr>

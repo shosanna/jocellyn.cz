@@ -1,10 +1,11 @@
 body {
-  font-family: "proxima-nova", 'sans-serif';
-  font-size: 18px;
+  font-family: "Open Sans", 'sans-serif';
+  font-size: 14px;
 }
 
 p {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .invisible {
@@ -32,11 +33,12 @@ p {
 
 h1.title {
   font-size: 48px;
-  font-family: "federico-web";
+  font-family: 'Sue Ellen Francisco', cursive;
   margin-bottom: 20px;
 }
 
 h2 {
+  font-family: 'Sue Ellen Francisco', cursive;
   font-size: 26px;
   font-weight: 300;
 }
@@ -90,6 +92,7 @@ a:hover {
 }
 
 .single-post h1 {
+  font-family: 'Sue Ellen Francisco', cursive;
   margin-bottom: 20px;
 }
 

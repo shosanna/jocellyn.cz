@@ -1,7 +1,7 @@
 ---
 title: Ruby function arguments explained
 date: 2014-08-03 20:34 UTC
-tags: Ruby, programming
+tags: ruby, programming
 layout: post
 ---
 
@@ -158,12 +158,12 @@ do it like this: `(a=4)`
 
 Be aware of the parameter assignment order - the required ones always
 take precedence, it doesn't matter where they are. If you have a
-definition like this `def method(a,b,c*,d,e)` and you call it with only
+definition like this `def method(a,b,*c,d,e)` and you call it with only
 4 arguments, `a`,`b`,`d`,`e,` will get assigned, but not the optional
 `c`, which will be left with nothing.
 
 ```ruby
-def method(a,b,c*,d,e)
+def method(a,b,*c,d,e)
   p a, b, c, d, e
 end
 

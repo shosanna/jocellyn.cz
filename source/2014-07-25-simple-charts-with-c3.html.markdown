@@ -2,7 +2,7 @@
 title: Simple charts with C3 - in 5 minutes!
 layout: post
 date: 2014-07-25 18:43 UTC
-tags: javascript, programming
+tags: javascript, programming, visualization
 ---
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>

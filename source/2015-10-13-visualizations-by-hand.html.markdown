@@ -1,7 +1,8 @@
 ---
 title: Data visualizations by hand
 date: 2015-10-13 22:33 UTC
-tags:
+tags: javascript, programming, visualization
+layout: post
 ---
 
 I got an interesting assignment at my University this week - to draw a variety

@@ -1,6 +1,6 @@
 ---
 title: Data visualizations by hand
-date: 2015-10-13 22:33 UTC
+date: 2015-10-13 20:33 UTC
 tags: javascript, programming, visualization
 layout: post
 ---
@@ -11,7 +11,7 @@ possible representations and about what kind of chart would fit the best to be
 A) visually pleasing and at the same time B) informative and clear.
 
 It was not a hard exercise but it got me think about multiple stories that can
-be told with the same dataset. 
+be told with the same dataset.
 
 This was the dataset: (if you are interested, it is the volume of immigrants comming to the Czech republic)
 ![data](images/imigranti2.png)

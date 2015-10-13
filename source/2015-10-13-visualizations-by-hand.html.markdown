@@ -1,7 +1,7 @@
 ---
 title: Data visualizations by hand
 date: 2015-10-13 20:33 UTC
-tags: javascript, programming, visualization
+tags: visualization
 layout: post
 ---
 

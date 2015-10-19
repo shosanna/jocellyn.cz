@@ -1,7 +1,7 @@
 ---
 title: Cleaning data for visualization (Visu homework II.)
 date: 2015-10-19 19:07 UTC
-tags: visualization
+tags: visualization, ruby, programming
 layout: post
 ---
 

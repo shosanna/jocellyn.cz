@@ -1,5 +1,5 @@
 ---
-title: Data visualizations by hand
+title: Data visualizations by hand (Visu homework I.)
 date: 2015-10-13 20:33 UTC
 tags: visualization
 layout: post

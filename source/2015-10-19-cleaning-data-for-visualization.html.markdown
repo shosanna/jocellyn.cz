@@ -108,8 +108,8 @@ Here is the code that does that:
 And the resulting visualizations were just the results of a few clicks in Excel ...
 (Next time look forward visualizations in d3)
 
-![chart1](images/chart1.png)
-![chart2](images/chart2.png)
-![chart3](images/chart3.png)
+![chart1](images/chart1.jpg)
+![chart2](images/chart2.jpg)
+![chart3](images/chart3.jpg)
 
 

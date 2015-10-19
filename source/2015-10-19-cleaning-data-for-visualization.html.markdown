@@ -109,7 +109,7 @@ And the resulting visualizations were just the results of a few clicks in Excel 
 (Next time look forward visualizations in d3)
 
 ![chart1](images/chart1.png)
-![chart1](images/chart2.png)
-![chart1](images/chart3.png)
+![chart2](images/chart2.png)
+![chart3](images/chart3.png)
 
 

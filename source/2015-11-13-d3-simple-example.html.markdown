@@ -1,5 +1,5 @@
 ---
-title: D3 simple visualization
+title: D3 simple visualization (Visu homework V)
 date: 2015-11-13 19:44 UTC
 tags: visualization, javascript, programming
 layout: post

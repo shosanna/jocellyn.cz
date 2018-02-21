@@ -13,55 +13,55 @@ In this article I want to share with you my sources of remote jobs with brief co
 
 Here is my list of sources (in no particular order):
 
-- [https://landing.jobs/]()
+- [https://landing.jobs/](https://landing.jobs/)
 All types of jobs, possible to filter remote
 Something like an agency - they need to pre-approve you before it goes to the company
 I thought it was very cool, with a personal touch, but they started to email me a lot and did not actually get me any interview
 
-- [https://angel.co/]()
+- [https://angel.co/](https://angel.co/)
 All types of jobs, possible to filter remote
 Only startups Similar to Tinder - you just say interested or not interested (although lots of companies want more info)
 This approach was not successful for me, almost no one replied back
 Good filtering
 
-- [https://remoteok.io/]()
+- [https://remoteok.io/](https://remoteok.io/)
 Only remote jobs
 No filtering, only tags
 I did not like the UI, but the jobs were not that bad
 
-- [https://weworkremotely.com/]()
+- [https://weworkremotely.com/](https://weworkremotely.com/)
 Only remote jobs
 No filtering, only search
 My favourite site, except they are having tons of applicants (it is famous because of the book Remote)
 
-- [http://stackoverflow.com/jobs]()
+- [http://stackoverflow.com/jobs](http://stackoverflow.com/jobs)
 All types of jobs, possible to filter remote
 Good filtering
-This site ended up to be the most successful for me - almost every company I contacted there replied, I got several interviews through this site and landed my job at [https://www.leadfeeder.com/]()
+This site ended up to be the most successful for me - almost every company I contacted there replied, I got several interviews through this site and landed my job at [https://www.leadfeeder.com/](https://www.leadfeeder.com)
 
-- [https://www.workingnomads.co]()
+- [https://www.workingnomads.co](https://www.workingnomads.co)
 Only remote jobs
 No filtering, only tags
 It seems like there are A LOT of jobs, not just tech
 
-- [https://remotelist.io/]()
+- [https://remotelist.io/](https://remotelist.io/)
 Only remote jobs
 Yet another site with similar jobs like elsewhere
 
-- [https://github.com/justshiv/remote-first]()
+- [https://github.com/justshiv/remote-first](https://github.com/justshiv/remote-first)
 Only remote tech jobs
 Someone’s personal list, it is very nice
 I found it by accident :)
 
 Besides that, in Czech republic environment, I really like those sites, even though they are not focused on remote, one can find there occasionally something interesting:
 
-- [https://jobs.czechcrunch.cz/]()
+- [https://jobs.czechcrunch.cz/](https://jobs.czechcrunch.cz/)
 It is new, there are not many offers yet, but I believe it has a potential
 
-- [https://www.startupjobs.cz/]()
+- [https://www.startupjobs.cz/](https://www.startupjobs.cz/)
 My favourite czech job portal, it should be only startups
 
-- [https://techloop.io]()
+- [https://techloop.io](https://techloop.io)
 Would have been my favourite portal at all, I love their idea of sharing salary information up front, I love how many companies are there and I love the bonus for getting job through them BUT
 they are having too many technical issues all the time. I messaged their customer support dozens of times, because something in the UI just was not working :(
 

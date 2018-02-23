@@ -11765,7 +11765,7 @@ cost &= \frac{1}{N} \sum\_{i=1}^N (y\_i - (m \cdot x\_i))\^2 \\\\\\\\
 \end{align}
 $$
 </p><p class="text">
-Now we can tell how much is the line off. What next? Now we want to minimize this number, as we want the error - the distance of the points from the line - to be the smallest. And here comes very important function for machine learning - **gradient descent**. Gradient descent is a algorithm to tell a minimum of a function. It is based on a [gradient](https://en.wikipedia.org/wiki/Gradient) - which tells us the direction to the minimum with respect to our changing variables. 
+Now we can tell how much is the line off. What next? Now we want to minimize this number, as we want the error - the distance of the points from the line - to be the smallest. And here comes very important function for machine learning - **gradient descent**. Gradient descent is an algorithm to find a local minimum of a function. It is based on a [gradient](https://en.wikipedia.org/wiki/Gradient) - which is a vector of all the partial derrivatives for all the function parameters. Those derivates tells us how the function would change if we would change the parameter. We can use this knowledge to change the parameters so that the function output is smaller than it was. This is exactly what gradient descent is doing - it is trying to get to the minimum of the function by iteratively changing its parameters so that the value of the function decreases. 
 </p><p class="text">
 We have 2 variables - or **weights** - and those are `m` and `b`, because the equation for a line is 
 

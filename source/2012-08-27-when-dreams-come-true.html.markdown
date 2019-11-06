@@ -5,7 +5,6 @@ tags: self-improvement
 layout: post
 ---
 
-
 I would like to tell you about dreams and about conditions required for their realization. As far as I have known, there are few conditions which you must fulfill in order to follow your dreams. I will explain these with my own experiences.
 
 First and most important condition is permission. You have to allow yourself to have that dream. It may sounds silly, but we all know that cases when we want something but a little voice inside our head is telling us, that we should not want it (it is too expensive, I do not deserve that, it is too dangerous, etc..). First step is to admit that all these barriers are only inside your head. Yes, you might not have enough money and it may not be the most secure thing to do but we are speaking about dreams!

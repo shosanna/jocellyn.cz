@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
+# if [[ $(git status -s) ]]
+# then
+#     echo "The working directory is dirty. Please commit any pending changes."
+#     exit 1;
+# fi
+#
 echo "Deleting old publication"
 rm -rf build
 mkdir build
@@ -20,7 +20,7 @@ echo "Removing existing files"
 rm -rf build/*
 
 echo "Generating site"
-bundle exec middleman build
+bundle exec middleman build > /dev/null
 
 echo "Updating gh-pages branch"
 cd build && git add --all && git commit -m "Publishing to gh-pages (publish.sh) ... $(date)"

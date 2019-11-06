@@ -24,4 +24,4 @@ bundle exec middleman build
 
 echo "Updating gh-pages branch"
 cd build && git add --all && git commit -m "Publishing to gh-pages (publish.sh) ... $(date)"
-git push origin gh-pages
+git push nufik gh-pages

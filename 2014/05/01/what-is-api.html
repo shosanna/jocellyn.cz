@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1'/>
+  <title>Jocellyn's Blog  - What is an API?</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+
+  <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/main.css" rel="stylesheet">
+  <meta name="google-site-verification" content="rnwDRfWLERH4z0UoMfWumemvsRSmRIQTz3dd15flK4k" />
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+</head>
+<body>
+
+
+<div id="main" role="main" class="container">
+  <div class="row">
+    <a href="/"><h1 class="title"> Jocellyn's Blog</h1></a>
+
+    <div class="col-md-3 image menu">
+      <a href="/">
+        <img src="/images/2.jpeg" class="logo" alt="" />
+      </a>
+      <h2>Recent Articles</h2>
+      <ol>
+          <li><a href="/2018/02/21/how-much-for-my-next-uber.html">How much for my next Uber? Light intro to machine learning</a> </li>
+          <li><a href="/2018/01/25/simple-game-development-with-pixi.html">The simplest game development with Pixi.js</a> </li>
+          <li><a href="/2018/01/25/how-did-i-lost-fear-from-recruiters.html">How did I lose fear from recruiters</a> </li>
+          <li><a href="/2017/10/30/where-to-find-remote-job.html">Where to find remote job</a> </li>
+          <li><a href="/2017/04/16/why-ruby-is-slow.html">Why Ruby is slow?</a> </li>
+          <li><a href="/2016/10/18/why-am-i-leaving-msd.html">Why am I leaving MSD</a> </li>
+          <li><a href="/2015/11/13/d3-simple-example.html">D3 simple visualization (Visu homework V)</a> </li>
+          <li><a href="/2015/10/29/interesting-visualization.html">Interesting visualization (Visu homework IV.)</a> </li>
+          <li><a href="/2015/10/21/what-is-wrong-with-that-graph.html">What is wrong with that graph? (Visu homework III.)</a> </li>
+          <li><a href="/2015/10/19/cleaning-data-for-visualization.html">Cleaning data for visualization (Visu homework II.)</a> </li>
+      </ol>
+
+      <h2>Tags</h2>
+      <ol>
+          <li><a href="/tags/machine-learning.html">machine learning (1)</a></li>
+          <li><a href="/tags/programming.html">programming (21)</a></li>
+          <li><a href="/tags/game-development.html">game development (1)</a></li>
+          <li><a href="/tags/javascript.html">javascript (4)</a></li>
+          <li><a href="/tags/career.html">career (3)</a></li>
+          <li><a href="/tags/ruby.html">ruby (14)</a></li>
+          <li><a href="/tags/performance.html">performance (1)</a></li>
+          <li><a href="/tags/visualization.html">visualization (6)</a></li>
+          <li><a href="/tags/haskell.html">haskell (2)</a></li>
+          <li><a href="/tags/rails.html">rails (9)</a></li>
+          <li><a href="/tags/mongodb.html">mongodb (2)</a></li>
+          <li><a href="/tags/sociology.html">sociology (6)</a></li>
+          <li><a href="/tags/self-improvement.html">self-improvement (11)</a></li>
+          <li><a href="/tags/eu.html">EU (3)</a></li>
+          <li><a href="/tags/education.html">education (3)</a></li>
+          <li><a href="/tags/love.html">love (1)</a></li>
+      </ol>
+
+      <h2>By Year</h2>
+      <ol>
+        <li><a href="/2018.html">2018 (3)</a></li>
+        <li><a href="/2017.html">2017 (2)</a></li>
+        <li><a href="/2016.html">2016 (1)</a></li>
+        <li><a href="/2015.html">2015 (6)</a></li>
+        <li><a href="/2014.html">2014 (15)</a></li>
+        <li><a href="/2013.html">2013 (7)</a></li>
+        <li><a href="/2012.html">2012 (8)</a></li>
+    </ol>
+
+
+    </div>
+    <div class="col-md-7 articles">
+        <div class="single-post">
+
+    <h1>What is an API?</h1>
+
+    <p>When someone tries to explain me &ldquo;what is an API&rdquo;, he always says
+something like: &ldquo;well, it is a programming interface, when you want to
+gain some information from a app, you can do it via API&rdquo;. I really did
+not understand that.  I finally got it when I started to work on a rails
+app with an API used for frontend. So, what is an API?</p>
+
+<p>When you build your web app, you generally do it for humans (at least us
+beginners do). We assume that only humans will view our glamorous
+landing page, will enjoy our carefully selected fonts and colors, will
+read our content.  That is why we have frontend - our views, our css
+files and our controllers.  API is something we want to use when we do
+not expect humans to interact with our page. What? How? Why?</p>
+
+<p>Well, we do not have to imagine another applications for a while, we can
+stick with humans. It is not entirely true, that API is not for them, it
+could be. The main difference is that API is serving plain data (for
+example as JSON).  When using standard rails way, we are serving
+html.erb. Well, how to tell which one to use?</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">UsersController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="vi">@users</span> <span class="o">=</span> <span class="no">User</span><span class="p">.</span><span class="nf">all</span>
+    <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+      <span class="nb">format</span><span class="p">.</span><span class="nf">html</span>
+      <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@users</span><span class="p">}</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Do you recognize this code? It is from guides.rubyonrails.org. When
+telling the controller which format renders what, we are preparing our
+API (the json part) and also our standard views (the html part). If the
+user (human) visits <code>/users</code> he will get the html view with perhaps nice
+listing of all users (with images, css styles, javascripts, etc.. ).
+But when someone (human or other app) visits (aka make request)
+<code>/users.json</code> he will get a looong hash with all the users data. This is
+good when you need only that, maybe you want to do some other stuff with
+these information, like calculate some statistics? When you just need to
+download the data to process them, you do not care about the design.
+You need the most efficient way.</p>
+
+<p>Ok, so what about the other apps? Lets say, you want to display your
+facebook statuses on your page! What wou will do?  You will make a
+request to facebook and ask them to give you the hash of your statuses.
+You do not need the whole profile with all the extra information, you do
+not care about how it looks, you just need to connect to facebook,
+download the data and use them on your page. This is how the two
+application can talk to each other - they make requests to their APIs.</p>
+
+<p>I do not want to give lecture about HTTP requests, so just in short,
+there are several types of requests, we will be working with GET, POST,
+PUT or DELETE. Get is when you are reading stuff, in Rails that is when
+you want the <code>index</code> or the <code>show</code> action (because you want only to see
+the content). Post is for creating new stuff, aka <code>create</code> and put is
+for updating, aka <code>update</code> in Rails. Delete is when you want to destroy
+some record.  So, when you go to an URL like this: <code>/users/3</code> you are
+doing a GET request, because you are invoking a <code>show</code> action for user
+with ID 3.</p>
+
+<p>As you probably guess, you can make a request by going to some URL in a
+browser, but you can also do it in terminal (command line) with curl.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>curl http://localhost:3000/users/4
+</code></pre></div>
+<p>The response to this could be:</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"_id"</span><span class="p">:</span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"Susan"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"work"</span><span class="p">:</span><span class="s2">"teacher"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"facebook"</span><span class="p">:</span><span class="s2">"www.facebook.com/shosanna"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="s2">"2014-04-07T14:47:09.964+02:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="s2">"2014-04-23T13:30:08.241+02:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"email"</span><span class="p">:</span><span class="s2">"dostalovaz@gmail.com"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"agreedWithTerms"</span><span class="p">:</span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>You see? Its UGLY, but it efficient. It is just the information you
+asked for.</p>
+
+<p>The curl command uses GET method as default, if you would like to pass
+it another one, you could do it like this:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>curl -X PUT http://localhost:3000/users/4/update -d "{"work":"programmer"}"
+</code></pre></div>
+<p>When you want to change something (via put or post) you need to send
+some data along with that request, so that the server can make
+appropriate changes. We send the altered work attribute with the &ldquo;-d&rdquo;
+flag.  (You know, this data will come to our controller as params! -
+<a href="http://jocellyn.cz/2014/04/21/rails-params-it-is-just-a-hash.html">see my other article about it</a>&ldquo;)</p>
+
+<p>Ok, so we know how to make request. Now lets speak a bit more about why
+to do it and &hellip; what exactly is this API anyway?</p>
+
+<p>I said something about using API for frontend, well this is one way to
+use it. You can completely detach your frontend and communicate with it
+by sending along requests and responses through API. Or you can use it
+just for a part. Lets show an example, I am having map in my app and I
+want to prepare some data to send to the map for displaying them.  The
+map is itself in javascript, so I need to send a json.</p>
+
+<p>I will create a special, API controller (now you will understand the API
+word!), because the data I want to prepare are not for humans, but are
+just for my own map. It will read it and process it and than the end
+result will be used by humans. I will separate my new controller into a
+API module, because it is better to have a distinction between your
+proper controller and those special ones not for humans :)</p>
+
+<p>The other possibility is to use the <code>respond_to</code> method in one
+controller, as we saw earlier, but I like it better separate..
+This way I have one controller which represents my API, because it 
+is not using any views, and one which is the normal one.</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">MapController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="c1"># Action could be blank, because it will invoke </span>
+    <span class="c1"># its proper view by default.</span>
+    <span class="c1"># When humans will go to /map, they</span>
+    <span class="c1"># will see the view under views/map/index.html.erb</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+
+<span class="k">class</span> <span class="nc">Api::MapController</span> <span class="o">&lt;</span> <span class="no">Api</span><span class="o">::</span><span class="no">ApplicationController</span>
+  <span class="k">def</span> <span class="nf">index</span>
+    <span class="vi">@geo_points</span> <span class="o">=</span> <span class="no">Point</span><span class="p">.</span><span class="nf">all</span>
+    <span class="n">render</span> <span class="ss">json: </span><span class="vi">@geo_points</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>As you can see, we will not render any html template in our API 
+controller, just json. It will not invoke the default view as in
+the first case, because when we typed <code>render</code> we explicitly said to 
+render whatever format is then specified and prevented the default.
+Next, we pulled out all our <code>geo_points</code> to show them on the map, then we
+rendered them via json. This means that every object will be serialized
+to json like this:</p>
+<div class="highlight"><pre class="highlight json"><code><span class="p">{</span><span class="nl">"lat"</span><span class="p">:</span><span class="s2">"43242342"</span><span class="p">,</span><span class="w"> </span><span class="nl">"lon"</span><span class="p">:</span><span class="s2">"345432"</span><span class="p">,</span><span class="w"> </span><span class="nl">"city"</span><span class="p">:</span><span class="s2">"Prague"</span><span class="p">,</span><span class="w"> </span><span class="nl">"state"</span><span class="p">:</span><span class="s2">"Czech Republic"</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This would came out for every records if the GeoPoint class would have an attributes lat, lon, city and state.</p>
+
+<p>The map we are talking about would need to call the request from
+javascript. It itself could be located in a HTML view, but inside that
+view we would be calling an javascript file with all the functionality.
+The request from javascript could look like this (with using jQuery):</p>
+<div class="highlight"><pre class="highlight plaintext"><code>// we prepare a variable which will store our response
+
+var page_content;
+
+// we make a request, every request has an answer and that will be stored in our page_content
+
+$.get( "http://localhost:3000/api/map", function(data){
+    page_content = data;
+});
+
+</code></pre></div>
+<p>Tadaaa! Notice, that we had to append &quot;api&rdquo; before &ldquo;map&rdquo; in the URL, because our map controller is in API module.
+We now have the response (json!) stored in a variable, so we can do stuff with it. It is just a hash, so we can retrieve values by keys:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>
+var lat = data[0]["lat"]
+var lon = data[0]["lon"]
+</code></pre></div>
+<p>(in real life we would iterate through all the records, here I just used [0] to get the first geo point,
+and than I called its lat and lon). Now we have everything we need in order to show the points on the map.</p>
+
+<p>We did it by API - the interface not for visual pleasure but for pure data. The interface for another apps,
+another parts of our app, or even humans, who need just to extract the data.</p>
+
+<p>A bit more from real life for the end:
+Every successful web application says &ldquo;we have an public API&rdquo;. This means, they have a list of all the requests
+you can do to them. For example, my favourite game League of Legends has <a href="https://developer.riotgames.com/docs/getting-started">this website</a> about their API.
+What you can do, is to make a requests and get the data they prepared for you on their API controllers.
+For example, if you make requests to this URL (and replace summonerId with an actual ID)</p>
+<div class="highlight"><pre class="highlight plaintext"><code>/api/lol/{region}/v2.2/team/by-summoner/{summonerId}
+</code></pre></div>
+<p>you will get back a json with info about all players who are on the same team as the one who&rsquo;s ID you passed in.
+This feature, the public API, allows players and fans to create a cool websites. They can make projects which
+gains from the official API but show the data in an original way, or they can count en extra statistics for players.
+The possibilities are unlimited!!</p>
+
+    <hr class="space-maker">
+
+
+    <div class="social-buttons-wrap">
+      <div class="social-buttons">
+        <div class="inner-buttons">
+          <script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"> </script>
+          <br>
+          <div class="g-plusone" data-size="tall"></div>
+          <br>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-related="Jocinka" data-lang="en" data-size="medium" data-count="vertical"> Tweet </a>
+          <br>
+          <div class="fb-like" data-href="http://jocellyn.cz#{current_article.url}" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"> </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row well" id="journey">
+        <a href="http://journeyapp.net/" target="_blank">
+            <div class="col-md-8">
+                <h3> Journey - Think. Write. Grow. </h3>
+                <p> Self-improvement app which will help you to focus on your emotions, be positive and stay mindful. </p>
+            </div>
+            <div class="col-md-4">
+                <img src="/images/journey.png" class="journey" alt="" />
+            </div>
+        </a>
+    </div>
+
+    <hr class="space-maker">
+    <h1>Comments</h1>
+    <div class="disqus">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'jocellyncz'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+       })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38390510-1', 'jocellyn.cz');
+ga('send', 'pageview');
+
+    </script>
+
+    </div>
+  </div>
+</div>
+
+<div class="invisible">
+  <a href="https://plus.google.com/101530780379992796153?rel=author">Google</a>
+</div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38390510-1', 'jocellyn.cz');
+ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+var _gauges = _gauges || [];
+(function() {
+ var t   = document.createElement('script');
+ t.type  = 'text/javascript';
+ t.async = true;
+ t.id    = 'gauges-tracker';
+ t.setAttribute('data-site-id', '5364b096eddd5b1500001191');
+ t.src = '//secure.gaug.es/track.js';
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(t, s);
+ })();
+</script>
+</body>
+</html>
+
+    <script type="text/javascript">
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/platform.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+    </script>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=301963046612249&version=v2.0";
+ fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
+    </script>
+    <script type="text/javascript">
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>

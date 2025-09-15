@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec middleman:*)",
+      "Bash(sudo apt:*)",
+      "Bash(sudo apt install:*)",
+      "Bash(docker:*)",
+      "Bash(bundle:*)",
+      "Bash(chmod:*)",
+      "Bash(gem install:*)",
+      "Bash(python3:*)",
+      "Bash(curl:*)",
+      "Bash(ssh-keygen:*)",
+      "Read(/home/shosanna/.ssh/**)",
+      "Bash(git remote set-url:*)",
+      "Bash(ssh:*)",
+      "Bash(git branch:*)",
+      "Bash(git worktree:*)",
+      "Bash(./deploy.sh)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -18,10 +18,12 @@
 
 <div id="main" role="main" class="container">
   <div class="row">
-    <%= link_to "/" do %><h1 class="title"> Jocellyn's Blog</h1><% end %>
+    <% link_to "/" do %>
+      <h1 class="title"> Jocellyn's Blog</h1>
+    <% end %>
 
     <div class="col-md-3 image menu">
-      <%= link_to "/" do %>
+      <% link_to "/" do %>
         <%= image_tag "2.jpeg", class: "logo" %>
       <% end %>
       <h2>Recent Articles</h2>

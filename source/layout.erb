@@ -18,12 +18,12 @@
 
 <div id="main" role="main" class="container">
   <div class="row">
-    <a href="/"><h1 class="title"> Jocellyn's Blog</h1></a>
+    <%= link_to "/" do %><h1 class="title"> Jocellyn's Blog</h1><% end %>
 
     <div class="col-md-3 image menu">
-      <a href="/">
+      <%= link_to "/" do %>
         <%= image_tag "2.jpeg", class: "logo" %>
-      </a>
+      <% end %>
       <h2>Recent Articles</h2>
       <ol>
         <% blog.articles[0...10].each do |article| %>

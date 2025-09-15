@@ -9,7 +9,7 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
 
   <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href="/stylesheets/main.css" rel="stylesheet">
+  <%= stylesheet_link_tag "main" %>
   <meta name="google-site-verification" content="rnwDRfWLERH4z0UoMfWumemvsRSmRIQTz3dd15flK4k" />
   <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 </head>
@@ -22,7 +22,7 @@
 
     <div class="col-md-3 image menu">
       <a href="/">
-        <%= image_tag "images/2.jpeg", class: "logo" %>
+        <%= image_tag "2.jpeg", class: "logo" %>
       </a>
       <h2>Recent Articles</h2>
       <ol>
